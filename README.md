@@ -1,6 +1,13 @@
 # Hurricane_CNN
 Implementing a conventional neural networks in python to locate hurricanes
 
+DATASETS MUST BE DOWNLOADED BEFORE RUNNING THE PROGRAM
+
+Step #1: Download aws
+Step #2: aws s3 cp s3://impact-datashare/transverse_bands/ <path/to/save> --recursive --no-sign-request
+Step #3: Put the files in the same directory as conventional-neural-network.py
+Step #3: Put the files in the same directory as conventional-neural-network.py
+
 conventional-neural-network.py uses artifical intellegence and deep learning to determine location of hurricanes on the world map provided my NASA.
 
 Line 38 of the code has a variable "date" that is responsible for the date that the CNN will anaylses to find hurricanes, this date is editable but follow the format provided in the variable.
@@ -50,6 +57,10 @@ The recommended system requirments to run this program is 16GB DDR4 RAM and 2GHZ
 IF YOU DO NOT HAVE THE MINIMUM SYSTEM REQUIRMENTS PLEASE DO NOT ATTEMPT RUNNING THE CODE. IT WILL CRASH YOUR SYSTEM.
 
 Python Module "Tensorflow" is optimized with GPU's, hence to improve preformace consider switching the GPU of your system.
+
+Files labeled "yes" and "no" should be in the same directory as the program file, if they are outside the directory the program will not run.
+
+Do not edit any file name, the file names are vital for the program to run, editing the file names will result in the program not running.
 
 Upon running the code a GUI will appear, be paitent it will appear. When the GUI appears 3 inputs will be on the right of the map, the recommended values are below. The only datatype that should be entered into the inputs are integers >1 and <1000.
 
